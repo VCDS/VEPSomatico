@@ -37,9 +37,8 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
   %%bash
   pwd
   ```
-4. Agora podemos adicionar
  
- Com isso o ambiente de trabalho está preparado para receber os dados e o VEP.
+ Com isso o ambiente de trabalho está preparado para receber o VEP.
  
 # Utilizando o VEP
 
@@ -70,16 +69,21 @@ Por fim, com o ambiente de trabalho preparado e o VEP instalado, podemos fazer a
 %%bash
 /ensembl-vep-105.0/vep  \
   --fork 4 \
-  -i /content/drive/Shareddrives/T3-2021/homo_sapiens_refseq/105_GRCh37/WP312.filtered.vcf.gz \
-  -o WP312.filtered.vcf.tsv \
-  --dir_cache /content/drive/Shareddrives/T3-2021/ \
-  --fasta /content/drive/Shareddrives/T3-2021/homo_sapiens_refseq/Homo_sapiens_assembly19.fasta \
+  -i /caminho_documento_vcf/nome_documento_vcf.vcf.gz \
+  -o nome_desejado.filtered.vcf.tsv \
+  --dir_cache /caminho_dir_cashe/ \
+  --fasta /caminho_documento_fasta/nome_documento_fasta.fasta \
   --cache --offline --assembly GRCh37 --refseq  \
 	--pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
   --fields "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
   --individual all
 ```
-
+Vamos interpretar os caminhos e nomes necessários para preencher corretamente o comando acima:
+- em '-i' o 'caminho_documento_vcf' se refere ao caminho do diretório onde o arquivo vcf a ser analisado está localoizado e 'nome_documento_vcf'
+  se refere ao nome do documento VCF que será analisado
+- em '-o' o 'nome_desejado' se refere ao nome que você deseja utilizar no output do arquivo filtrado gerado pelo VEP
+- em '--dir_cache' o 'caminho_dir_cashe' se refere ao caminho do diretório cashe
+- em '--fasta' o 'caminho
 
 
 ```bash
