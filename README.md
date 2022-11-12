@@ -100,7 +100,7 @@ tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.ts
 df = pd.DataFrame(tabela)
 df
 
-### Exemplo de uma tabela gerada no final do processo:
+Exemplo de uma tabela gerada no final do processo:
 ```
 |index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
