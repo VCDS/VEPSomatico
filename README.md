@@ -7,10 +7,10 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático
 - Como usar o VEP
 
 
-#Introdução
+# Introdução
 
 
-#Instalar bibliotecas necessárias
+# Instalar bibliotecas necessárias
 
 
-#Como usar o VEP
+# Como usar o VEP
