@@ -25,10 +25,7 @@ O processo para utilização do VEP segue por:
 
 
 ```bash
-FIAP - Hyperledger Foundation
-
-< Aula: Hyperledger Foundation -
-< Prof.: Arthur Miranda de Souza >
+< Imagina>
  -----------------------------
      \   ^__^
       \  (oo)\_______
