@@ -9,10 +9,10 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático
 o
 o
 o
-otyutyutyu
+###otyutyutyu
 o
 o
-otyutyu
+###otyutyu
 o
 otyutyu
 
@@ -21,9 +21,9 @@ otyutyu
 
 o
 o
+###o
 o
-o
-o
+###o
 o
 o
 o
@@ -42,16 +42,16 @@ o
 
 
 o
+###o
 o
 o
 o
-o
-o
+###o
 
 
 # Como usar o VEP
 
 o
 o
-o
-o
+###o
+###o
