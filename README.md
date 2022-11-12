@@ -23,3 +23,11 @@ O processo para utilização do VEP segue por:
 
 # Utilizando o VEP
 
+
+< Imagina fazer o próximo trabalho todo no github.. >
+ -----------------------------
+     \   ^__^
+      \  (oo)\_______
+         (__)\       )\/\
+            ||----w |
+            ||     ||
