@@ -1,4 +1,4 @@
-# :dna: vcfannotatoR :dna: <!-- omit in toc -->
+# 🐮: vcfannotatoR 🐮: <!-- omit in toc -->
 
 # VEPSomatico
 Como utilizar VEP -ensembl 105.0 em um VCF somático
