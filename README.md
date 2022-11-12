@@ -25,7 +25,7 @@ O processo para utilização do VEP segue por:
 
 
 ```bash
-< Imagina>
+< Imagina fazer o próximo trabalho todo no github>
  -----------------------------
      \   ^__^
       \  (oo)\_______
