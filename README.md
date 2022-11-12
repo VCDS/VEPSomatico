@@ -99,6 +99,8 @@ Agora podemos visualizar o arquivo gerado pelo VEP, que faremos através de uma 
 tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.tsv', sep='\t', skiprows=38)
 df = pd.DataFrame(tabela)
 df
+
+Exemplo de uma tabela gerada no final do processo:
 ```
 |index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -110,7 +112,7 @@ df
 ```
 
 ```bash
-< Imagina fazer o próximo trabalho todo no github>
+< Se eu ganhar minha cerveja vai para o professor! 😜>
  -----------------------------
      \   ^__^
       \  (oo)\_______
