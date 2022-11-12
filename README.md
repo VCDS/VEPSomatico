@@ -83,24 +83,24 @@ Por fim, com o ambiente de trabalho preparado e o VEP instalado, podemos fazer a
   --fields "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
   --individual all
 ```
-Vamos interpretar os caminhos e nomes necessários para preencher corretamente o comando acima:
+### Vamos interpretar os caminhos e nomes necessários para preencher corretamente o comando acima:
 - em `-i` o `caminho_documento_vcf` se refere ao caminho do diretório onde o arquivo vcf a ser analisado está localoizado e `nome_documento_vcf`
   se refere ao nome do documento VCF que será analisado
 - em `-o` o `nome_desejado` se refere ao nome que você deseja utilizar no output do arquivo filtrado gerado pelo VEP
 - em `--dir_cache` o 'caminho_dir_cashe' se refere ao caminho do diretório cashe
 - em `--fasta` o `caminho_documento_fasta` é o caminho para o diretório onde está localizado o documento fasta
-As opções `--cache`, `--fields` e `--individual` você deve preencher de acordo com o que você deseja gerar no seu output e a documentação para
+### As opções `--cache`, `--fields` e `--individual` você deve preencher de acordo com o que você deseja gerar no seu output e a documentação para
 fazer a melhor escolha possível para cada caso pode ser encontrada neste [link](https://www.ensembl.org/info/docs/tools/vep/script/vep_filter.html)
 
-Agora podemos visualizar o arquivo gerado pelo VEP, que faremos através de uma tabela gerada pelo pandas onde:
+### Agora podemos visualizar o arquivo gerado pelo VEP, que faremos através de uma tabela gerada pelo pandas onde:
 1. em `caminho_para_vcf_tsv` indica o caminho do diretório para o arquivo `vcf.tsv`
 2. em `nome_arquivo_vcf_tsv` se refere ao nome do arquivo `vcf.tsv` que foi gerado
 ```
 tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.tsv', sep='\t', skiprows=38)
 df = pd.DataFrame(tabela)
 df
-
-Exemplo de uma tabela gerada no final do processo:
+```
+### Exemplo de uma tabela gerada no final do processo:
 ```
 |index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
