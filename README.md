@@ -113,7 +113,7 @@ Exemplo de uma tabela gerada no final do processo:
 ```
 Chega!
 
-```bash
+```
 < Se eu ganhar minha cerveja vai para o professor! 😜>
  -----------------------------
      \   ^__^
