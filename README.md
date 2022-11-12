@@ -14,14 +14,14 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático
 
 
 
-
+-
 
 
 
 # Introdução
 
 
-
+-
 
 
 
@@ -39,7 +39,10 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático
 
 
 
-
+-
 
 
 # Como usar o VEP
+
+
+-
