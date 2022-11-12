@@ -110,6 +110,7 @@ Exemplo de uma tabela gerada no final do processo:
 |3|1\_894491\_C/A|1:894491|A|-|NM\_015658\.4:c\.27-30G\>T|-|NOC2L|intron\_variant|WP312|HET|-|-|-|-|SNV|-|
 |4|1\_907758\_A/G|1:907758|G|rs757863610,COSV58020841|NM\_001367552\.1:c\.992A\>G|NP\_001354481\.1:p\.Glu331Gly|PLEKHN1|missense\_variant|WP312|HET|E/G|-|-|-|SNV|1KG\_ALL:G:NA|
 ```
+Chega!
 
 ```bash
 < Se eu ganhar minha cerveja vai para o professor! 😜>
