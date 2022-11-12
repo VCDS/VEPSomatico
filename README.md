@@ -7,10 +7,39 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático
 - [Como usar o VEP](https://github.com/VCDS/VEPSomatico#Como_usar_o_VEP)
 
 
+
+
+
+
+
+
+
+
+
+
+
 # Introdução
 
 
+
+
+
+
+
+
+
+
+
+
 # Instalar bibliotecas necessárias
+
+
+
+
+
+
+
+
 
 
 # Como usar o VEP
