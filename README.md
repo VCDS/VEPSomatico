@@ -1,34 +1,21 @@
-# 🐮 vcfannotatoR 🐮 <!-- omit in toc -->
+# 🐮 Mini trabalho de somático 🐮 <!-- omit in toc -->
 
 # VEPSomatico
-Como utilizar VEP -ensembl 105.0 em um VCF somático
+Como utilizar VEP -ensembl 105.0 em um VCF somático no Colab
 
 
 - [Introdução](#introdução)
 - [Instalar bibliotecas necessárias](#instalar-bibliotecas-necessárias)
 - [Como usar o VEP](#como-usar-o-vep)
 
-
-###otyutyutyu
-
-###otyutyu
-
-###tyutyu
-
 # Introdução
 
+Ensembl Variant Effect Predictor ou VEP te ajuda a determinar os efeitos das variantes encontradas nos dados a serem analisados; sendo eles genes, transcritos ou sequências proteicas. Precisando apenas das coordenadas das variantes e a mudança nucleica que foi observada.
 
-
-### fghfghfgh
-
-### fghfghfghfgh
-
-
-
-
-
-
-
+O processo para utilização do VEP segue por:
+1. Montar o drive no Colab
+2. Instalar o VEP
+3. Fazer a anotação das variantes
 
 # Instalar bibliotecas necessárias
 
