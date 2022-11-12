@@ -99,7 +99,7 @@ Agora podemos visualizar o arquivo gerado pelo VEP, que faremos através de uma 
 tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.tsv', sep='\t', skiprows=38)
 df = pd.DataFrame(tabela)
 df
-
+```
 |index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|1\_874643\_C/A|1:874643|A|-|NM\_001385640\.1:c\.1058-9C\>A|-|SAMD11|splice\_polypyrimidine\_tract\_variant,intron\_variant|WP312|HET|-|-|-|-|SNV|-|
@@ -107,6 +107,7 @@ df
 |2|1\_880620\_A/C|1:880620|C|rs1569931554|NM\_015658\.4:c\.2054-94T\>G|-|NOC2L|intron\_variant|WP312|HET|-|-|-|-|SNV|-|
 |3|1\_894491\_C/A|1:894491|A|-|NM\_015658\.4:c\.27-30G\>T|-|NOC2L|intron\_variant|WP312|HET|-|-|-|-|SNV|-|
 |4|1\_907758\_A/G|1:907758|G|rs757863610,COSV58020841|NM\_001367552\.1:c\.992A\>G|NP\_001354481\.1:p\.Glu331Gly|PLEKHN1|missense\_variant|WP312|HET|E/G|-|-|-|SNV|1KG\_ALL:G:NA|
+```
 
 ```bash
 < Imagina fazer o próximo trabalho todo no github>
