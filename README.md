@@ -103,7 +103,6 @@ df
 Exemplo de uma tabela gerada no final do processo:
 
 ```
-```
 |index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|1\_874643\_C/A|1:874643|A|-|NM\_001385640\.1:c\.1058-9C\>A|-|SAMD11|splice\_polypyrimidine\_tract\_variant,intron\_variant|WP312|HET|-|-|-|-|SNV|-|
