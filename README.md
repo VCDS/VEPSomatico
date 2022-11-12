@@ -37,6 +37,7 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
   %%bash
   pwd
   ```
+4. Agora podemos adicionar
  
  Com isso o ambiente de trabalho está preparado para receber os dados e o VEP.
  
@@ -63,6 +64,23 @@ Pronto, instalação comcluida. Podemos utilizar o código abaixo para testar se
   cd ensembl-vep-105.0
   ./vep 
   ```
+
+Por fim, com o ambiente de trabalho preparado e o VEP instalado, podemos fazer a anotação das variantes com o seguinte comando:
+```
+%%bash
+/ensembl-vep-105.0/vep  \
+  --fork 4 \
+  -i /content/drive/Shareddrives/T3-2021/homo_sapiens_refseq/105_GRCh37/WP312.filtered.vcf.gz \
+  -o WP312.filtered.vcf.tsv \
+  --dir_cache /content/drive/Shareddrives/T3-2021/ \
+  --fasta /content/drive/Shareddrives/T3-2021/homo_sapiens_refseq/Homo_sapiens_assembly19.fasta \
+  --cache --offline --assembly GRCh37 --refseq  \
+	--pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
+  --fields "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
+  --individual all
+```
+
+
 
 ```bash
 < Imagina fazer o próximo trabalho todo no github>
