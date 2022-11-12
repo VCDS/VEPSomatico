@@ -42,6 +42,13 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
  
 # Utilizando o VEP
 
+Agora que temos nosso ambiente de trabalho preparado, podemos utilizar o próximo comando para instalar o VEP. Em ordem, cada
+linha do comando pode ser interpretada da seguinte forma:
+1. Instalação dos pacotes necessários para utilizar o VEP
+2. Fazer download do VEP na versão esembl-vep 105.0
+3. Descompactar o documento baixado
+4. As duas últimas linhas indicam ao colab para entrar no diretório do VEP onde foi descompactado e fazer a instalação
+
 ```
 %%bash
 sudo apt install unzip curl git libmodule-build-perl libdbi-perl libdbd-mysql-perl build-essential zlib1g-dev
@@ -50,7 +57,12 @@ tar -zxvf 105.0.tar.gz
 cd ensembl-vep-105.0
 ./INSTALL.pl --NO_UPDATE 
 ```
-
+Pronto, instalação comcluida. Podemos utilizar o código abaixo para testar se tudo ocorreu como o planejado:
+  ```
+  %%bash
+  cd ensembl-vep-105.0
+  ./vep 
+  ```
 
 ```bash
 < Imagina fazer o próximo trabalho todo no github>
