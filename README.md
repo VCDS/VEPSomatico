@@ -79,11 +79,12 @@ Por fim, com o ambiente de trabalho preparado e o VEP instalado, podemos fazer a
   --individual all
 ```
 Vamos interpretar os caminhos e nomes necessários para preencher corretamente o comando acima:
-- em `-i` o 'caminho_documento_vcf' se refere ao caminho do diretório onde o arquivo vcf a ser analisado está localoizado e 'nome_documento_vcf'
+- em `-i` o `caminho_documento_vcf` se refere ao caminho do diretório onde o arquivo vcf a ser analisado está localoizado e `nome_documento_vcf`
   se refere ao nome do documento VCF que será analisado
-- em '-o' o 'nome_desejado' se refere ao nome que você deseja utilizar no output do arquivo filtrado gerado pelo VEP
-- em '--dir_cache' o 'caminho_dir_cashe' se refere ao caminho do diretório cashe
-- em '--fasta' o 'caminho
+- em `-o` o `nome_desejado` se refere ao nome que você deseja utilizar no output do arquivo filtrado gerado pelo VEP
+- em `--dir_cache` o 'caminho_dir_cashe' se refere ao caminho do diretório cashe
+- em `--fasta` o `caminho_documento_fasta` é o caminho para o diretório onde está localizado o documento fasta
+- 
 
 
 ```bash
