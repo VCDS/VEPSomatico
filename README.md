@@ -21,7 +21,7 @@ O processo para utilização do VEP segue por:
 
 Começar criando um novo notebook no seu [Google Colab](https://colab.research.google.com/), uma vez no colab:
 1. Montar o drive no ambiente de trabalho, que permite criar e gerenciar os dados:
-  ```
+  ```linux
   from google.colab import drive
   drive.mount('/content/drive')
   ```
