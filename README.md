@@ -42,6 +42,14 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
  
 # Utilizando o VEP
 
+```
+%%bash
+sudo apt install unzip curl git libmodule-build-perl libdbi-perl libdbd-mysql-perl build-essential zlib1g-dev
+wget -c https://github.com/Ensembl/ensembl-vep/archive/refs/tags/105.0.tar.gz
+tar -zxvf 105.0.tar.gz
+cd ensembl-vep-105.0
+./INSTALL.pl --NO_UPDATE 
+```
 
 
 ```bash
