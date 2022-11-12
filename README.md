@@ -25,8 +25,8 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
   from google.colab import drive
   drive.mount('/content/drive')
   ```
-2. Agora montamos um diretório específico para os documentos gerados. Utilizamos o "%%bash" para indicar ao Colab
-   que este código está em bash e utilizamos o "%cd" para fixar esse diretório como o diretório principal:
+2. Agora montamos um diretório específico para os documentos gerados. Utilizamos o `%%bash` para indicar ao Colab
+   que este código está em bash e utilizamos o `%cd` para fixar esse diretório como o diretório principal:
   ```
   %%bash
   mkdir vepsomatico
@@ -37,6 +37,11 @@ Começar criando um novo notebook no seu [Google Colab](https://colab.research.g
   %%bash
   pwd
   ```
+ 4. Vamos instalar algumas módulos que serão utilizados mais adiante:
+ ```
+ import pandas as pd
+ import csv
+ ```
  
  Com isso o ambiente de trabalho está preparado para receber o VEP.
  
@@ -84,8 +89,24 @@ Vamos interpretar os caminhos e nomes necessários para preencher corretamente o
 - em `-o` o `nome_desejado` se refere ao nome que você deseja utilizar no output do arquivo filtrado gerado pelo VEP
 - em `--dir_cache` o 'caminho_dir_cashe' se refere ao caminho do diretório cashe
 - em `--fasta` o `caminho_documento_fasta` é o caminho para o diretório onde está localizado o documento fasta
-- 
+As opções `--cache`, `--fields` e `--individual` você deve preencher de acordo com o que você deseja gerar no seu output e a documentação para
+fazer a melhor escolha possível para cada caso pode ser encontrada neste [link](https://www.ensembl.org/info/docs/tools/vep/script/vep_filter.html)
 
+Agora podemos visualizar o arquivo gerado pelo VEP, que faremos através de uma tabela gerada pelo pandas onde:
+1. em `caminho_para_vcf_tsv` indica o caminho do diretório para o arquivo `vcf.tsv`
+2. em `nome_arquivo_vcf_tsv` se refere ao nome do arquivo `vcf.tsv` que foi gerado
+```
+tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.tsv', sep='\t', skiprows=38)
+df = pd.DataFrame(tabela)
+df
+
+|index|\#Uploaded\_variation|Location|Allele|Existing\_variation|HGVSc|HGVSp|SYMBOL|Consequence|IND|ZYG|Amino\_acids|CLIN\_SIG|PolyPhen|SIFT|VARIANT\_CLASS|FREQS|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|0|1\_874643\_C/A|1:874643|A|-|NM\_001385640\.1:c\.1058-9C\>A|-|SAMD11|splice\_polypyrimidine\_tract\_variant,intron\_variant|WP312|HET|-|-|-|-|SNV|-|
+|1|1\_874647\_C/A|1:874647|A|rs1336064632|NM\_001385640\.1:c\.1058-5C\>A|-|SAMD11|splice\_polypyrimidine\_tract\_variant,splice\_region\_variant,intron\_variant|WP312|HET|-|-|-|-|SNV|-|
+|2|1\_880620\_A/C|1:880620|C|rs1569931554|NM\_015658\.4:c\.2054-94T\>G|-|NOC2L|intron\_variant|WP312|HET|-|-|-|-|SNV|-|
+|3|1\_894491\_C/A|1:894491|A|-|NM\_015658\.4:c\.27-30G\>T|-|NOC2L|intron\_variant|WP312|HET|-|-|-|-|SNV|-|
+|4|1\_907758\_A/G|1:907758|G|rs757863610,COSV58020841|NM\_001367552\.1:c\.992A\>G|NP\_001354481\.1:p\.Glu331Gly|PLEKHN1|missense\_variant|WP312|HET|E/G|-|-|-|SNV|1KG\_ALL:G:NA|
 
 ```bash
 < Imagina fazer o próximo trabalho todo no github>
