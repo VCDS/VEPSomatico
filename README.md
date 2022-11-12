@@ -19,7 +19,13 @@ O processo para utilização do VEP segue por:
 
 # Preparação do ambiente de trabalho
 
-
+Começar criando um novo notebook no seu [Google Colab](https://colab.research.google.com/), uma vez no colab:
+1. Montar o drive no ambiente de trabalho
+  ```
+  from google.colab import drive          # importar a biblioteca
+  drive.mount('/content/drive')           # montar o drive
+  ```
+ 2. 
 
 # Utilizando o VEP
 
@@ -32,6 +38,5 @@ O processo para utilização do VEP segue por:
          (__)\       )\/\
             ||----w |
             ||     ||
-by Renato Puga
 
 ```
