@@ -5,8 +5,8 @@ Como utilizar VEP -ensembl 105.0 em um VCF somático no Colab
 
 
 - [Introdução](#introdução)
-- [Instalar bibliotecas necessárias](#instalar-bibliotecas-necessárias)
-- [Como usar o VEP](#como-usar-o-vep)
+- [Preparação do ambiente de trabalho](#preparação-do-ambiente-de-trabalho)
+- [Utilizando o VEP](#Utilizando-o-vep)
 
 # Introdução
 
@@ -17,24 +17,9 @@ O processo para utilização do VEP segue por:
 2. Instalar o VEP
 3. Fazer a anotação das variantes
 
-# Instalar bibliotecas necessárias
+# Preparação do ambiente de trabalho
 
 
 
+# Utilizando o VEP
 
-
-
-o
-### fghfghfgho
-o
-o
-o
-### fghfghfo
-
-
-# Como usar o VEP
-
-o
-o
-### fghfghfgho
-### fghfghfgho
